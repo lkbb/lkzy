@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Index from '@/components/index'
 import Login from '@/components/login'
 import Shouji from '@/components/shouji'
 import Zhuce from '@/components/zhuce'
@@ -10,6 +11,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Index',
+      component: Index
+    },
+    {
+      path: '/login',
       name: 'Login',
       component: Login
     },
